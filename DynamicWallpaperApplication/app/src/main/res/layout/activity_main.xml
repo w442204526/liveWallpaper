@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpaper"
+        android:layout_weight="1"
+        android:background="@color/deep_white"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/shallow_black"/>
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:gravity="center_horizontal"
+        android:background="@color/deep_white"
+        android:paddingTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:id="@+id/video_dynami_wallpaper"
+            android:src="@drawable/button_select_video_dynami_wallpaper"
+            android:onClick="startActivity"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="120dp"
+            />
+        <ImageView
+            android:id="@+id/custom_dynami_wallpaper"
+            android:src="@drawable/button_custom_dynamic_wallpaper"
+            android:onClick="startActivity"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+    </LinearLayout>
+
+</LinearLayout>
